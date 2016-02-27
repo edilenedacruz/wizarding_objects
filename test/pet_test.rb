@@ -8,6 +8,7 @@ require './lib/pet'
 class PetTest < Minitest::Test
 
   def test_a_pet_has_a_name_and_a_type
+    skip
     pet = Pet.new("Crookshanks","Cat")
 
     assert_equal "Crookshanks", pet.name
@@ -15,6 +16,7 @@ class PetTest < Minitest::Test
   end
 
   def test_a_pet_has_a_different_name_and_type
+    skip
     pet = Pet.new("Hedwig","Owl")
 
     assert_equal "Hedwig", pet.name

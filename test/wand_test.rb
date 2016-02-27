@@ -14,6 +14,7 @@ class WandTest < Minitest::Test
   end
 
   def test_a_wand_has_different_type_size_and_core
+    skip
     wand = Wand.new("Cherry", 14, "Basilisk Fang")
 
     assert_equal "Cherry", wand.type
@@ -22,6 +23,7 @@ class WandTest < Minitest::Test
   end
 
   def test_a_wand_can_cast_a_spell
+    skip
     wand = Wand.new("Cherry", 14, "Basilisk Fang")
 
     expected = "Casting Accio!"
@@ -29,7 +31,4 @@ class WandTest < Minitest::Test
 
     assert_equal expected, actual
   end
-
-
-
 end

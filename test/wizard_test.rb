@@ -8,18 +8,21 @@ require './lib/pet'
 class WizardTest < Minitest::Test
 
   def test_a_wizard_has_a_name
+    skip
     wizard = Wizard.new("Hermione")
 
     assert_equal "Hermione", wizard.name
   end
 
   def test_a_wizard_can_have_a_different_name
+    skip
     wizard = Wizard.new("Ron")
 
     assert_equal "Ron", wizard.name
   end
 
   def test_you_can_give_a_wizard_a_pet
+    skip
     wizard = Wizard.new("Hermione")
     pet = Pet.new("Crookshanks", "Cat")
 
@@ -30,6 +33,7 @@ class WizardTest < Minitest::Test
   end
 
   def test_you_can_give_a_wizard_many_pets
+    skip
     wizard = Wizard.new("Hermione")
     pet = Pet.new("Crookshanks", "Cat")
     pet_2 = Pet.new("Hedwig", "Owl")
@@ -43,6 +47,7 @@ class WizardTest < Minitest::Test
   end
 
   def test_a_wizard_can_list_pets
+    skip
     wizard = Wizard.new("Hermione")
     pet = Pet.new("Crookshanks", "Cat")
     pet_2 = Pet.new("Hedwig", "Owl")
@@ -57,6 +62,7 @@ class WizardTest < Minitest::Test
   end
 
   def test_a_wizard_can_have_a_wand
+    skip
     wizard = Wizard.new("Harry")
     wand = Wand.new("Cherry",12,"Unicorn Hair")
 
@@ -66,11 +72,10 @@ class WizardTest < Minitest::Test
   end
 
   def test_a_wizard_can_cast_a_spell
+    skip
     wizard = Wizard.new("Ginny")
 
     actual = wizard.cast_spell("Expecto Patronum")
     expected = "Casting Expecto Patronum!"
   end
-
 end
-
