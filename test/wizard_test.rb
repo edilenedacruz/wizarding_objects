@@ -74,7 +74,10 @@ class WizardTest < Minitest::Test
   def test_a_wizard_can_cast_a_spell
     skip
     wizard = Wizard.new("Ginny")
-
+    wand = Wand.new("Cherry",12,"Unicorn Hair")
+    
+    wizard.give_wand(wand)
+    
     actual = wizard.cast_spell("Expecto Patronum")
     expected = "Casting Expecto Patronum!"
   end
